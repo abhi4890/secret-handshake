@@ -1,5 +1,8 @@
 export function secretHandshake(number) {
-  if ( number === 3) {
+  if (number === 19) {
+    return ['double blink', 'wink'];
+  }
+  if (number === 3) {
     return ['wink', 'double blink'];
   }
   if (number === 8) {
