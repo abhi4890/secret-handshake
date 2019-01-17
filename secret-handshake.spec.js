@@ -17,7 +17,7 @@ describe('Secret Handshake', () => {
     expect(secretHandshake(8)).toEqual(['jump']);
   });
 
-  xtest('Eleven gives \'wink\'\' and \'double blink\'', () => {
+  test('Eleven gives \'wink\'\' and \'double blink\'', () => {
     expect(secretHandshake(3)).toEqual(['wink', 'double blink']);
   });
 
