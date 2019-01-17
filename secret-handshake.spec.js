@@ -13,7 +13,7 @@ describe('Secret Handshake', () => {
     expect(secretHandshake(4)).toEqual(['close your eyes']);
   });
 
-  xtest('Eight gives \'jump\'', () => {
+  test('Eight gives \'jump\'', () => {
     expect(secretHandshake(8)).toEqual(['jump']);
   });
 
