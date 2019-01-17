@@ -5,7 +5,7 @@ describe('Secret Handshake', () => {
     expect(secretHandshake(1)).toEqual(['wink']);
   });
 
-  xtest('Two should give a \'double blink\'', () => {
+  test('Two should give a \'double blink\'', () => {
     expect(secretHandshake(2)).toEqual(['double blink']);
   });
 
