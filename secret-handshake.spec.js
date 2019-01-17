@@ -9,7 +9,7 @@ describe('Secret Handshake', () => {
     expect(secretHandshake(2)).toEqual(['double blink']);
   });
 
-  xtest('Four gives \'close your eyes\'', () => {
+  test('Four gives \'close your eyes\'', () => {
     expect(secretHandshake(4)).toEqual(['close your eyes']);
   });
 
