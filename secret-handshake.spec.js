@@ -29,7 +29,7 @@ describe('Secret Handshake', () => {
     expect(secretHandshake(31)).toEqual(['jump', 'close your eyes', 'double blink', 'wink']);
   });
 
-  xtest('Invalid secret handshake gives error', () => {
+  test('Invalid secret handshake gives error', () => {
     expect(() => secretHandshake('piggies'))
       .toThrow(new Error('Handshake must be a number'));
   });
