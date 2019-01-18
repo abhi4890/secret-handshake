@@ -1,18 +1,20 @@
 export function secretHandshake(number) {
-  if (number === 19) {
-    return ['double blink', 'wink'];
+  const commands = ['wink', 'double blink', 'close your eyes', 'jump'];
+  const numberAsBinaryString = Number(number).toString(2);
+  const digitArray = numberAsBinaryString
+    .split('')
+    .reverse()
+    .map(element => Number(element));
+  let sequence = [];
+  let iterator;
+  for (iterator = 0; iterator < digitArray.length; iterator += 1) {
+    if (digitArray[iterator] === 1) {
+      sequence.push(commands[iterator]);
+    }
   }
-  if (number === 3) {
-    return ['wink', 'double blink'];
+  if (digitArray.length >= 5) {
+    sequence.pop();
+    sequence = sequence.reverse();
   }
-  if (number === 8) {
-    return ['jump'];
-  }
-  if (number === 2) {
-    return ['double blink'];
-  }
-  if (number === 4) {
-    return ['close your eyes'];
-  }
-  return ['wink'];
+  return sequence;
 }
